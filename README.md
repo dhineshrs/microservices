@@ -8,6 +8,8 @@
 5. Tyk
 6. gravitee (https://gravitee.io/)
 
+An ** API Gateway ** is a server that is the single entry point into the system. It is *similar to the Facade pattern* from object‑oriented design. The API Gateway encapsulates the internal system architecture and provides an API that is tailored to each client. It might have other responsibilities such as authentication, monitoring, load balancing, caching, request shaping and management, and static response handling.
+
 ## About API Gateway: ## 
 
 - It acts as a router. It is the only entry point to our collection of microservices. This way, microservices are not needed to be public, anymore, but are behind an internal network and API Gateway is responsible for making requests against a service or another one (Service Discovery).
