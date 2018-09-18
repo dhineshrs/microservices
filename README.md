@@ -19,3 +19,6 @@ An **API Gateway** is a server that is the single entry point into the system. I
 - It is a protocol abstraction layer: API Gateway can be exposed as a REST API or GraphQL or whatever, no matter what protocol or technology is being used internally to communicate with the microservices.
 
 - Error management is centralized: When a service is not available, is getting too slow or something like that, API Gateway can provide data from cache, default responses or make smart decisions to avoid bottlenecks or fatal errors propagation. This keeps the circuit closed (Circuit Breaker) and makes the system more resilient and reliable.
+
+### Drawbacks of an API Gateway ###
+The API Gateway also has some drawbacks. It is yet another highly available component that must be developed, deployed, and managed. There is also a risk that the API Gateway becomes a development bottleneck. Developers must update the API Gateway in order to expose each microservice’s endpoints. It is important that the process for updating the API Gateway be as lightweight as possible. Otherwise, developers will be forced to wait in line in order to update the gateway. Despite these drawbacks, however, for most real‑world applications it makes sense to use an API Gateway.
