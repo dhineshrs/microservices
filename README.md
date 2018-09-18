@@ -6,6 +6,7 @@
 3. Mulesoft
 4. Kong
 5. Tyk
+6. gravitee (https://gravitee.io/)
 
 ## About API Gateway: ## 
 
