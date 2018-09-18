@@ -24,3 +24,9 @@ An **API Gateway** is a server that is the single entry point into the system. I
 
 ### Drawbacks of an API Gateway ###
 The API Gateway also has some drawbacks. It is yet another highly available component that must be developed, deployed, and managed. There is also a risk that the API Gateway becomes a development bottleneck. Developers must update the API Gateway in order to expose each microservice’s endpoints. It is important that the process for updating the API Gateway be as lightweight as possible. Otherwise, developers will be forced to wait in line in order to update the gateway. Despite these drawbacks, however, for most real‑world applications it makes sense to use an API Gateway.
+
+## event-driven-data-management-microservices ##
+
+In a microservices architecture, each microservice has its own private datastore. Different microservices might use different SQL and NoSQL databases. While this database architecture has significant benefits, it creates some distributed data management challenges. The first challenge is how to implement business transactions that maintain consistency across multiple services. The second challenge is how to implement queries that retrieve data from multiple services.
+
+For many applications, the solution is to use an event‑driven architecture. One challenge with implementing an event‑driven architecture is how to atomically update state and how to publish events. There are a few ways to accomplish this, including using the **database as a message queue** , transaction log mining, and event sourcing.
