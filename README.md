@@ -1,5 +1,7 @@
 # microservices
 
+microservices‑based applications often use a mixture of SQL and NoSQL databases, the so‑called **polyglot persistence** approach.
+
 ## API Gateways ##
 1. Apigee
 2. CA Layer 7
